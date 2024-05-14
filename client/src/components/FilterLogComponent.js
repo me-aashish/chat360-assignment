@@ -22,6 +22,7 @@ function FilterLogComponent(){
             }
         
         })
+        console.log(response.data.result);
         setFilteredLogs(response.data.result);
     } catch (error) {
         setError('Error filtering logs:', error.message);

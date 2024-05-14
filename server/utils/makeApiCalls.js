@@ -22,7 +22,7 @@ async function makeApiCalls(){
             }
 
         } catch (error) {
-            writeToLogFile("error", error, new Date().toISOString(), API_URL_ARRAY[apiCallCount], filePath+"/log"+(apiCallCount+1)+".log");
+            writeToLogFile("error", error.message, new Date().toISOString(), API_URL_ARRAY[apiCallCount], filePath+"/log"+(apiCallCount+1)+".log");
         }
         apiCallCount++;
     }

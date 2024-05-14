@@ -1,0 +1,8 @@
+{
+    "log_level": "error",
+    "log_message": "Failed to connect",
+    "timestamp": "2024-05-14T15:11:19.213Z",
+    "metadata": {
+        "source": "https://dummy.restapiexample.com/api/v1/employees"
+    }
+}
