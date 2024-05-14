@@ -9,7 +9,7 @@
  - After starting the backend server, automatically 7-8 API requests will be made and their logs will be saved in the `logs` directory which can be configured from `.env` file.
 
 ## System Design of the app
-![System Design](https://drive.google.com/file/d/1b0hLAl6UYNZok3sU13UO7WUn66vrijRh/view?usp=sharing)
+![System Design](https://github.com/me-aashish/chat360-assignment/blob/master/chat360_assignment_sd.drawio.png)
 
 ## List of features
 - User can search for the logs using `log_level`, `log_message`, `metadata.source`, and `timestamps` as well.
