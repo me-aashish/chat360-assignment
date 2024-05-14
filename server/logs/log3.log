@@ -1,8 +1,0 @@
-{
-    "log_level": "info",
-    "log_message": "API call done",
-    "timestamp": "2024-05-14T09:46:45.798Z",
-    "metadata": {
-        "source": "https://catfact.ninja/fact"
-    }
-}
