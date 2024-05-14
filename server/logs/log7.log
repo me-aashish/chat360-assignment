@@ -1,8 +1,0 @@
-{
-    "log_level": "info",
-    "log_message": "API call done",
-    "timestamp": "2024-05-14T11:03:11.315Z",
-    "metadata": {
-        "source": "https://randomuser.me/api"
-    }
-}
