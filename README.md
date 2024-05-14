@@ -3,8 +3,9 @@
 
 ## Steps to run the app
  - Clone the repo: `https://github.com/me-aashish/chat360-assignment.git`
- - After cloning, first go to `client` directory and run `npm i` to install required packages and then run `npm start` to start the frontend on port `3000`
- - Similarly, go to `server` directory and run `npm i` to install required packages and then run `npm start` to start the backend on port `3001`
+ - After cloning, first go to `client` directory and run `npm i` to install required packages and then run `npm start` to start the frontend on port `3000`.
+ - Before starting backend, run start docker desktop on your system and after that run this command in your shell `docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest`. This will start the redis client which you can see on `localhost:8001`
+ - Similarly, go to `server` directory and run `npm i` to install required packages and then run `npm start` to start the backend on port `3001`.
  - After starting the backend server, automatically 7-8 API requests will be made and their logs will be saved in the `logs` directory which can be configured from `.env` file.
 
 ## System Design of the app
@@ -14,8 +15,9 @@
 - User can search for the logs using `log_level`, `log_message`, `metadata.source`, and `timestamps` as well.
 - Instead of cli, I have made a web-UI for user friendly interface
 - Bonus features such as `Implement search within specific date ranges`, `Utilize regular expressions for search` have also been implemented.
-- In order to increase the speed of serach results, Redis as cache has been used which will do the caching of searched results.
-- Proper structure of the codebase for better readibility
+- In order to increase the speed of search results, Redis as cache has been used which will do the caching of searched results.
+- Proper structure of the codebase for better readibility.
+- For seaching using timestamps, you have to give full timestamp such as `2024-05-14T11:03:06.187Z`.
 
 ## List of features which could be implemented further
 - For ingesting the massive volumes, we could use the `Load Balancer`s which will monitor the health of current API server and will spin up a new API server if the current one starts to get choked.
@@ -27,7 +29,7 @@
 ## Few issues present in the system
 - The code structure of the frontend app is not as per industry standard.
 - In the backend codebase, I have written the business logic in the `controller` itself  instead of `service` layer as I have not made `service` and `repository` layer as DB is present.
-- In the production/deployed app, instead of Redis client, I have used the in-memory object itself for the caching as I was facing some errors while deploying Redis client.
+- In the production/deployed app, instead of Redis client, I have used the in-memory object itself for the caching as I was facing some errors while deploying Redis client but it will be present in the cloned project.
 - Also, I have not given much attention to the log_level, log_message, I have generated them randomly, focused more on implementing fucntionalities such as searching, filtering etc. 
 
 
