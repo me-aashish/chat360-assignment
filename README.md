@@ -18,6 +18,7 @@
 - In order to increase the speed of search results, Redis as cache has been used which will do the caching of searched results.
 - Proper structure of the codebase for better readibility.
 - For seaching using timestamps, you have to give full timestamp such as `2024-05-14T11:03:06.187Z`.
+- Also, add the `multi-filter` functionality for logs, where logs can be filtered on the basis of combination of three fields- `log_level`, `log_message` and `log_metadata`. Timestamp has not been added in the multi-filter functionality.
 
 ## List of features which could be implemented further
 - For ingesting the massive volumes, we could use the `Load Balancer`s which will monitor the health of current API server and will spin up a new API server if the current one starts to get choked.
