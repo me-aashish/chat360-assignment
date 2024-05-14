@@ -1,0 +1,8 @@
+{
+    "log_level": "error",
+    "log_message": "Failed to connect",
+    "timestamp": "2024-05-14T11:03:10.555Z",
+    "metadata": {
+        "source": "https://official-joke-api.appspot.com/random_joke"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "log_level": "info",
+    "log_message": "API call done",
+    "timestamp": "2024-05-14T11:03:06.187Z",
+    "metadata": {
+        "source": "https://fakestoreapi.com/products"
+    }
+}
