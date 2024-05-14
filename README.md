@@ -26,12 +26,14 @@
 - We can horizontally scale the `DB by sharding` it in order to ingest the massive volumes of log.
 - Also, we can use `master-slave` design pattern for the DB where master DB will be responsible for the writes of the logs and slave DB will be responsible for the reads respectively.
 - Because of time constraint, I'm not able to implement above features.
+- I'll be more than happy to give the full System Design including the features to be implemented
 
 ## Few issues present in the system
 - The code structure of the frontend app is not as per industry standard.
 - In the backend codebase, I have written the business logic in the `controller` itself  instead of `service` layer as I have not made `service` and `repository` layer as DB is present.
 - In the production/deployed app, instead of Redis client, I have used the in-memory object itself for the caching as I was facing some errors while deploying Redis client but it will be present in the cloned project.
 - Also, I have not given much attention to the log_level, log_message, I have generated them randomly, focused more on implementing fucntionalities such as searching, filtering etc. 
+- These issues can easily be removed in the future.
 
 
 
