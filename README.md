@@ -7,6 +7,7 @@
  - Before starting backend, run start docker desktop on your system and after that run this command in your shell `docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest`. This will start the redis client which you can see on `localhost:8001`
  - Similarly, go to `server` directory and run `npm i` to install required packages and then run `npm start` to start the backend on port `3001`.
  - After starting the backend server, automatically 7-8 API requests will be made and their logs will be saved in the `logs` directory which can be configured from `.env` file.
+ - Also, I can provide the backend hosted URL with the API documentation.
 
 ## System Design of the app
 ![System Design](https://github.com/me-aashish/chat360-assignment/blob/master/chat360_assignment_sd.drawio.png)
